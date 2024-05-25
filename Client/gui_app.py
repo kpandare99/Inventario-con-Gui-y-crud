@@ -122,7 +122,7 @@ class Frame(tk.Frame):
        if self.id_inventario == None:
            guardar(datos)
        else:
-           editar(datos, self.Id_inventario)
+           editar(datos, self.id_inventario)
         
        
        
@@ -168,7 +168,7 @@ class Frame(tk.Frame):
 
     def editar_datos(self):
         try:
-            self.Id_inventario = self.tabla.item(self.tabla.selection())['text']
+            self.id_inventario = self.tabla.item(self.tabla.selection())['text']
             self.nombre = self.tabla.item(self.tabla.selection())['values'][0]
             self.objeto = self.tabla.item(self.tabla.selection())['values'][1]
             self.cantidad = self.tabla.item(self.tabla.selection())['values'][2]
