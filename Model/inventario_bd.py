@@ -94,7 +94,7 @@ def editar(Datos, Id_inventario):
     sql = f""" UPDATE inventario 
     SET nombre = '{Datos.Nombre}', 
     objeto = '{Datos.Objeto}', 
-    cantidad = '{Datos.Cantidad}',
+    cantidad = '{Datos.Cantidad}'
     WHERE Id_inventario = {Id_inventario}""" 
     
     try:
